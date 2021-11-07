@@ -10,7 +10,7 @@
 
 
 :root {
-    --primary-color: #904799;
+    --primary-color: #03A84E;
     --white-color: #fff;
     --black-color: #222;
 
@@ -37,6 +37,19 @@ body {
 
 .h1 {
     font-size: var(--fs-50);
+}
+
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-color: #fff;
+    background-position-x: 95%;
+    background-position-y: 17px;
+    background-repeat: no-repeat;
+    border-radius: 0;
 }
 
 
@@ -79,6 +92,10 @@ body {
     color: var(--white-color);
 }
 
+.MenuList {
+    gap: 10px;
+}
+
 .menu-login-btn {}
 
 .menu-login-btn .theme-btn span {
@@ -91,7 +108,7 @@ body {
     color: var(--primary-color);
 }
 
-.topNav .nav-link{
+.topNav .nav-link {
     font-size: var(--fs-18);
     font-weight: 500;
 }
@@ -107,7 +124,9 @@ body {
     justify-content: center;
 }
 
-.banner-content {}
+.banner-content {
+    padding-top: 80px;
+}
 
 .banner-content p {
     padding: 15px 0 40px;
@@ -131,7 +150,7 @@ body {
 
 .banner-search-form {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 50px;
+    grid-template-columns: 1fr 1fr 1fr 60px;
     gap: 10px;
 }
 
@@ -149,6 +168,7 @@ body {
 
 .banner-search-form .theme-btn {
     font-size: var(--fs-20);
+    min-width: 70px;
 }
 
 .banner-search-form input::placeholder {
