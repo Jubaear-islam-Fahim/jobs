@@ -167,6 +167,7 @@ select {
     border: 0;
     box-shadow: none;
     outline: none !important;
+    border-radius: var(--border-2);
 }
 
 .accordion-button:focus {
@@ -176,6 +177,7 @@ select {
 .owl-carousel img {
     width: auto !important;
 }
+
 /* 
 ::-moz-selection {
     background-color: var(--primary-color);
@@ -188,6 +190,23 @@ select {
     color: var(--white-color);
     text-shadow: none;
 } */
+ 
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { 
+    margin-bottom: 0rem; 
+    color: #222;
+}
 
 .section-bg {
     background-color: var(--bg-color)
@@ -217,5 +236,5 @@ select {
     .pb-100 {
         padding-bottom: 70px;
     }
- 
+
 }
