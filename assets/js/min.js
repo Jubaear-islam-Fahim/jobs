@@ -59,13 +59,21 @@
 
 
 
-    $('#container').imagesLoaded(function() {
+    $('.container').imagesLoaded(function() {
         var $grid = $('.candidates-grid').isotope({
             itemSelector: '.candidates-grid-item',
             percentPosition: true,
             masonry: {
                 // use outer width of grid-sizer for columnWidth
                 columnWidth: '.candidates-grid-item',
+            }
+        });
+        var $grid = $('.browse-jobs-grid').isotope({
+            itemSelector: '.browse-jobs-item',
+            percentPosition: true,
+            masonry: {
+                // use outer width of grid-sizer for columnWidth
+                columnWidth: '.browse-jobs-item',
             }
         });
 

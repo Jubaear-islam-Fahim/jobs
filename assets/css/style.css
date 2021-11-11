@@ -13,7 +13,7 @@
     --primary-color: #03A84E;
     --white-color: #fff;
     --black-color: #222;
-    --border-color: #f4f7f7;
+    --border-color: #999999;
 
     --p-color: #656565;
 
@@ -39,6 +39,10 @@ body {
 .primary-c {
     color: var(--primary-color);
     font-weight: 700;
+}
+
+.section-bg {
+    background-color: #f9fcfa;
 }
 
 .h1 {
@@ -364,7 +368,7 @@ select {
 .topList-bar,
 .topList-item {
     display: grid;
-    grid-template-columns: 10% 15% 1fr 25%;
+    grid-template-columns: 20% 30% 1fr;
 }
 
 .topList-bar {
@@ -403,7 +407,7 @@ select {
 }
 
 .topList-item>li::after {
-    background-color: #eee;
+    background-color: #cbcbcb;
 }
 
 .topList-item {
@@ -475,4 +479,98 @@ select {
     height: 25px;
     background: #cccccc45;
     padding: 2px;
+}
+
+.candidate-li {
+    display: grid;
+    gap: 15px;
+}
+
+.candidate-li li {}
+
+.candidate-li li a {
+    border: 1px solid var(--border-color);
+    display: block;
+    text-transform: capitalize;
+    font-size: var(--fs-16);
+    font-weight: 600;
+    color: var(--black-color);
+    padding: 12px 15px;
+    text-align: center;
+    transition: all .3s;
+}
+
+.candidate-li li a:hover,
+.candidate-li li a.active {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.candidate-title {
+    background-color: var(--black-color);
+    height: 52px;
+    text-align: center;
+    color: var(--white-color);
+    font-size: 20px;
+    font-weight: 500;
+    display: grid;
+    align-content: center;
+    margin-bottom: 15px;
+}
+
+.candidate-li .btn-browser {}
+
+.candidate-li .btn-browser i {
+    padding-left: 10px;
+}
+
+
+.browse-jobs-item {}
+
+.browse-jobs-item .topList-bar,
+.browse-jobs-item .topList-item {
+    display: grid;
+    grid-template-columns: 20% 1fr 30%;
+}
+
+.browse-jobs-item .action-badges {
+    display: grid;
+    gap: 10px;
+}
+
+.browse-jobs-item .action-badges li {}
+
+.browse-jobs-item .action-badges li a {
+    min-width: 150px;
+    height: 40px;
+    border: 1px solid var(--border-color);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--fs-16);
+    font-weight: 500;
+    color: var(--black-color);
+    transition: all .3s;
+}
+
+.browse-jobs-item .action-badges li a:hover,
+.browse-jobs-item .action-badges .apply-btn {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.loca-dot {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.loca-dot i {
+    color: var(--primary-color);
+}
+
+.browse-jobs-item .topList-item li:nth-child(2) {
+    justify-content: flex-start;
+    padding: 2px 35px;
 }
