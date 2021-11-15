@@ -59,7 +59,7 @@
 
 
 
-    $('.container').imagesLoaded(function() {
+    $('.container').imagesLoaded(function () {
         var $grid = $('.candidates-grid').isotope({
             itemSelector: '.candidates-grid-item',
             percentPosition: true,
@@ -78,17 +78,49 @@
         });
 
         // filter items on li click
-        $('.candidates-filter').on('click', 'li', function() {
+        $('.candidates-filter').on('click', 'li', function () {
             var filterValue = $(this).attr('data-filter');
-            $grid.isotope({ filter: filterValue });
+            $grid.isotope({
+                filter: filterValue
+            });
         });
 
         //for menu active class
-        $('.candidates-filter li').on('click', function(event) {
+        $('.candidates-filter li').on('click', function (event) {
             $(this).siblings('.active').removeClass('active');
             $(this).addClass('active');
             event.preventDefault();
         });
+    });
+
+
+    $('.spotlight-slid').owlCarousel({
+        loop: true,
+        margin: 0,
+        items: 1,
+        dots: false,
+        nav: true,
+        navText: ['<i class="fa-solid fa-angle-left"></i>', '<i class="fa-solid fa-angle-right"></i>']
+    });
+    $('.top-hiring-slid').owlCarousel({
+        loop: true,
+        margin: 20, 
+        dots: false,
+        autoplay: true,
+        nav: false,
+        // navText: ['<i class="fa-solid fa-angle-left"></i>', '<i class="fa-solid fa-angle-right"></i>']
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 4
+            }
+        }
     });
 
 
