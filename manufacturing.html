@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/plugin.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg topNav">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="pe-7s-menu"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="assets/img/logo.png" alt="logo">
+                    </h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 MenuList">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Find Jobs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Employers Details</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Candidates</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+
+                    </ul>
+                    <div class="menu-login-btn align-self-center gap-3 d-flex">
+                        <a href="" class="theme-btn "><span class="pe-7s-user"></span> Login</a>
+                        <a href="" class="theme-btn"><span class="pe-7s-candidates"></span> Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Inner Banner -->
+    <div class="inner-banner-area pt-100 pb-5 ">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="banner-content text-center">
+                        <div class="banner-form">
+                            <a class="toggle" data-bs-toggle="collapse" href="#toggleInfo" role="button"
+                                aria-expanded="false" aria-controls="toggleInfo">
+                                <span class="pe-7s-menu"></span>
+                            </a>
+                            <form action="" class="banner-search-form">
+                                <input type="text" placeholder="Job title or keywords">
+                                <select class="form-control">
+                                    <option value="1" selected="">Choose City</option>
+                                    <option value="2">New York</option>
+                                    <option value="3">California</option>
+                                    <option value="4">Illinois</option>
+                                    <option value="5">Texas</option>
+                                    <option value="6">Florida</option>
+                                </select>
+                                <select class="form-control">
+                                    <option value="1" selected="">Category</option>
+                                    <option value="2">Web Designer</option>
+                                    <option value="3">Web Developer</option>
+                                    <option value="4">Graphic Designer</option>
+                                    <option value="5">App Developer</option>
+                                    <option value="6">UI &amp; UX Expert</option>
+                                </select>
+                                <button type="submit" class="theme-btn btn-md"><i
+                                        class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="banner-range">
+                        <div class="collapse" id="toggleInfo">
+                            <div class="rang-cont">
+                                <div class="range-item">
+                                    <div class="range-title">
+                                        <div class="h5">Distance</div>
+                                    </div>
+                                    <div class="range-wrap">
+                                        <input type="range" class="range" min="0" max="200" value="70">
+                                        <span>
+                                            <output class="bubble"></output>
+                                            MI
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="range-item">
+                                    <div class="range-title">
+                                        <div class="h5">Rating</div>
+                                    </div>
+                                    <div class="range-wrap">
+                                        <input type="range" class="range" min="0" max="100" value="60">
+                                        <span>
+                                            <output class="bubble"></output>
+                                            %
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="range-item">
+                                    <div class="range-title">
+                                        <div class="h5">Days Published</div>
+                                    </div>
+                                    <div class="range-wrap">
+                                        <input type="range" class="range" min="0" max="60" value="30">
+                                        <span>
+                                            <output class="bubble"></output>
+
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="range-item">
+                                    <div class="range-title">
+                                        <div class="h5">Location</div>
+                                    </div>
+                                    <select class="form-control">
+                                        <option value="1" selected="">Choose City</option>
+                                        <option value="2">New York</option>
+                                        <option value="3">California</option>
+                                        <option value="4">Illinois</option>
+                                        <option value="5">Texas</option>
+                                        <option value="6">Florida</option>
+                                    </select>
+                                </div>
+                                <div class="range-item">
+                                    <div class="range-title">
+                                        <div class="h5">Industry</div>
+                                    </div>
+                                    <select class="form-control">
+                                        <option value="1" selected="">Category</option>
+                                        <option value="2">Web Designer</option>
+                                        <option value="3">Web Developer</option>
+                                        <option value="4">Graphic Designer</option>
+                                        <option value="5">App Developer</option>
+                                        <option value="6">UI &amp; UX Expert</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chip List -->
+    <div class="chip-list-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="chip-list-content nav gap-2">
+                        <li><a href="#" class="active">All</a></li>
+                        <li><a href="#">Part-time</a></li>
+                        <li><a href="#">Full-time </a></li>
+                        <li><a href="#">Easy Apply</a></li>
+                        <li><a href="#">Industry </a></li>
+                        <li><a href="#">Teen</a></li>
+                        <li><a href="#">Urgently Hiring</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="manufacturing-jobs-area py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="manufacturing-all">
+                        <article class="manufacturing-jobs-item">
+                            <div class="img">
+                                <img src="assets/img/logo.png" alt="">
+                            </div>
+                            <a href="#" class="title d-block h5"> Master Scheduler</a>
+                            <div class="job-company h6 ">International Medical Industries</div>
+                            <div class="job-location">Dhaka, Bangladesh</div>
+                            <div class="job-company-footer ">
+                                <p class="date">1 Day Ago</p>
+                                <a href="#" class="theme-btn ms-auto">Apply</a>
+                            </div>
+                        </article>
+                        <article class="manufacturing-jobs-item">
+                            <div class="img">
+                                <img src="assets/img/logo.png" alt="">
+                            </div>
+                            <a href="#" class="title d-block h5"> Master Scheduler</a>
+                            <div class="job-company h6 ">International Medical Industries</div>
+                            <div class="job-location">Dhaka, Bangladesh</div>
+                            <div class="job-company-footer ">
+                                <p class="date">1 Day Ago</p>
+                                <a href="#" class="theme-btn ms-auto">Apply</a>
+                            </div>
+                        </article>
+                        <article class="manufacturing-jobs-item">
+                            <div class="img">
+                                <img src="assets/img/logo.png" alt="">
+                            </div>
+                            <a href="#" class="title d-block h5"> Master Scheduler</a>
+                            <div class="job-company h6 ">International Medical Industries</div>
+                            <div class="job-location">Dhaka, Bangladesh</div>
+                            <div class="job-company-footer ">
+                                <p class="date">1 Day Ago</p>
+                                <a href="#" class="theme-btn ms-auto">Apply</a>
+                            </div>
+                        </article>
+                        <article class="manufacturing-jobs-item">
+                            <div class="img">
+                                <img src="assets/img/logo.png" alt="">
+                            </div>
+                            <a href="#" class="title d-block h5"> Master Scheduler</a>
+                            <div class="job-company h6 ">International Medical Industries</div>
+                            <div class="job-location">Dhaka, Bangladesh</div>
+                            <div class="job-company-footer ">
+                                <p class="date">1 Day Ago</p>
+                                <a href="#" class="theme-btn ms-auto">Apply</a>
+                            </div>
+                        </article>
+                        <article class="manufacturing-jobs-item">
+                            <div class="img">
+                                <img src="assets/img/logo.png" alt="">
+                            </div>
+                            <a href="#" class="title d-block h5"> Master Scheduler</a>
+                            <div class="job-company h6 ">International Medical Industries</div>
+                            <div class="job-location">Dhaka, Bangladesh</div>
+                            <div class="job-company-footer ">
+                                <p class="date">1 Day Ago</p>
+                                <a href="#" class="theme-btn ms-auto">Apply</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="manufacturing-details">
+                        <div class="manufacturing-details-header">
+                            <div class="img d-flex gap-3 align-items-center ">
+                                <img src="assets/img/logo.png" alt="">
+                                <div class="text">
+                                    <a href="#" class="title d-block h5"> Master Scheduler</a>
+                                    <div class="job-company h6 primary-color">International Medical Industries</div>
+                                </div>
+                            </div>
+                            <div class="details-footer d-flex align-items-center pt-3">
+                                <ul class="nav gap-3">
+                                    <li><span><i class="fa-solid fa-location-dot"></i> Dhaka, BD</span></li>
+                                    <li><span class="price"><i class="fa-solid fa-money-check-dollar"></i> ৳40k - ৳80k</span></li>
+                                    <li><a class="jobT jobFull primary-color">Full-Time</a></li>
+                                     
+                                </ul>
+                                <a href="#" class="theme-btn ms-auto">Apply</a>
+                            </div>
+                        </div>
+                        <div class="manufacturing-details-content">
+                            <div class="descriptionstyles">  
+                                <div class="h3 fw-bold">Description:</div>
+                                <br/>
+                                <p>Company Name: Air Squared</p>
+                                <p>Title of Position: Quality Inspector (Weekend or 2nd Shift)</p>
+                                <p>Position Type: Full-Time</p>
+                                <br/>
+                                <p><strong>Pay Range: $19-28/hour including shift premium, based on qualifications and
+                                        experience. 2nd shift premium is $1/hr. Weekend shift premium is 12% of the
+                                        hourly rate</strong></p>
+                                <p><br /></p>
+                                <p><strong>Benefits include:</strong></p>
+                                <ul>
+                                    <li>Health Insurance through Aetna (optional HSA plan with $10 per pay period
+                                        matching)</li>
+                                    <li>$400 Flexible Spending Account, paid by employer</li>
+                                    <li>Long Term Disability Insurance, paid by employer</li>
+                                    <li>3% matching SIMPLE IRA retirement plan</li>
+                                    <li>Safety shoe allowance</li>
+                                    <li>3-weeks PTO accrual and paid holidays</li>
+                                    <li>Parental Leave: 1-week paid Bonding Leave, 4-weeks paid Medical Child-Birth
+                                        Recovery Leave</li>
+                                    <li>Educational reimbursement</li>
+                                </ul>
+                                <p>Location: Broomfield, Colorado</p>
+                                <br/>
+                                <p>
+                                    <em>
+                                        <strong>As a covered federal contractor, under Executive Order 14042, all
+                                            employees at Air Squared are required to be fully vaccinated against
+                                            COVID-19, regardless of position, or file a medical or religious exemption.
+                                        </strong>
+                                    </em>
+                                </p>
+                                <p><br /></p>
+                                <p>
+                                    <em>
+                                        <strong>
+                                            If selected, you will be required to be vaccinated against COVID-19 and
+                                            submit documentation of proof of vaccination by December 8, 2021, or before
+                                            onboarding with Air Squared, if after December 8, 2021. Air Squared will
+                                            provide additional information regarding what information or documentation
+                                            will be needed and how you can request a legally required exception from
+                                            this requirement.
+                                        </strong>
+                                    </em>
+                                </p>
+                                <p><br /></p>
+                                <p>
+                                    Air Squared Manufacturing, Inc. is an OEM manufacturer of scroll type compressors,
+                                    vacuum pumps and expanders for the medical, aerospace, fuel cell and power
+                                    generation industries. Air Squared offers exciting career opportunities,
+                                    working on projects like the NASA Moxie project, Lockheed Martin, Chrysler, GM,
+                                    Honeywell and other cutting-edge projects.
+                                </p>
+                                <p><br /></p>
+                                <p>We are seeking a Quality Inspector to support the machining and manufacturing
+                                    processes on the Weekend Day Shift or on 2nd shift during the week.</p>
+                                <p><br /></p>
+                                <p><strong>1st Shift: Monday - Thursday 5:30 am - 4:00 pm. </strong></p>
+                                <p><strong>2nd Shift: Monday - Thursday 3:30 pm - 2:00 am. 2nd shift premium is $1/hr.
+                                    </strong></p>
+                                <p><strong>Weekend shift: Friday – Sunday 7:00 am – 7:30 pm. Weekend shift premium is
+                                        12% of the hourly rate.</strong></p>
+                                <p><br /></p>
+                                <p><strong>Job Responsibilities:</strong></p>
+                                <ul>
+                                    <li>Routinely inspect incoming and in-process parts by utilizing programmable CMMs,
+                                        optical measurement systems and other inspection tools</li>
+                                    <li>Support NCR process for incoming parts and FAIR process for incoming/in-process
+                                        parts</li>
+                                    <li>Support inspections for Operations and Warehouse as needed</li>
+                                    <li>Read and understand part prints including GD&amp;T</li>
+                                    <li>Work independently and manage time to ensure the flow of production</li>
+                                    <li>Support inspections for Operations and Warehouse as needed</li>
+                                    <li>Use SPC as required</li>
+                                    <li>Keep work area organized at all times</li>
+                                    <li>Regularly lift 30 lbs. of raw materials or machine parts with or without
+                                        accommodation</li>
+                                    <li>Perform other tasks as assigned</li>
+                                </ul>
+                                <br/>
+                                <p><strong>Qualifications</strong>:</p>
+                                <ul>
+                                    <li>High school diploma or GED (required)</li>
+                                    <li>Prior experience as a Quality Inspector in an ISO 9001 machining environment
+                                        (preferred)</li>
+                                    <li>Experience with manual inspection/measurement tools such as micrometers,
+                                        calipers and gauges (preferred)</li>
+                                    <li>Ability to use programmable Zeiss CMM (with CALYPSO software) (preferred)</li>
+                                    <li>GD&amp;T training and/or certification (preferred)</li>
+                                    <li>Employment with Air Squared is contingent on passing a statewide background
+                                        check, drug screening (for substances illegal in the state of Colorado), and
+                                        employment verification through E-Verify.</li>
+                                </ul>
+                                <br />
+                                <p>
+                                    <strong>How to Apply: </strong>
+                                    <a href="https://recruiting.paylocity.com/recruiting/jobs/All/1078af34-40eb-4989-83a3-3a2138324f69/Air-Squared-Manufacturing-Inc%20"
+                                        rel="nofollow">
+                                        <strong>https://recruiting.paylocity.com/recruiting/jobs/All/1078af34-40eb-4989-83a3-3a2138324f69/Air-Squared-Manufacturing-Inc</strong>
+                                    </a>
+                                </p>
+                                <p><br /></p>
+                                <p><strong>Pay Range: $19-28/hour including shift premium, based on qualifications and
+                                        experience. 2nd shift premium is $1/hr. Weekend shift premium is 12% of the
+                                        hourly rate</strong></p>
+                                <p><br /></p>
+                                <p>For information on Air Squared, visit our website at <a
+                                        href="https://airsquared.com/" rel="nofollow">https://airsquared.com/</a></p>
+                                <p><br /></p>
+                                <p><em>If you need an accommodation seeking employment with Air Squared, please email
+                                    </em>Careers@airsquared.com<em> or call (303) 466-2669.</em><em>Accommodations are
+                                        made on a case-by-case basis.</em></p>
+                                <p><br /></p>
+                                <p>
+                                    <em>
+                                        <strong>
+                                            Air Squared is an equal opportunity employer, and all qualified applicants
+                                            will receive consideration for employment without regard to race, color,
+                                            religion, sex, sexual orientation, gender identity, national origin,
+                                            disability, or status as a protected veteran.
+                                        </strong>
+                                    </em>
+                                </p>
+                                <p><br /></p>
+                                <p>
+                                    <a href="https://www.dol.gov/sites/dolgov/files/ofccp/regs/compliance/posters/pdf/eeopost.pdf"
+                                        rel="nofollow">EEO is the Law</a> |
+                                    <a href="https://www.dol.gov/sites/dolgov/files/ofccp/regs/compliance/posters/pdf/OFCCP_EEO_Supplement_Final_JRF_QA_508c.pdf"
+                                        rel="nofollow">EEO is the Law Supplement</a> |
+                                    <a href="https://www.dol.gov/sites/dolgov/files/OFCCP/pdf/pay-transp_%20English_formattedESQA508c.pdf"
+                                        rel="nofollow">Pay Transparency Nondiscrimination</a>|
+                                    <a href="https://e-verify.uscis.gov/web/media/resourcesContents/E-Verify_Participation_Poster_ES.pdf"
+                                        rel="nofollow noopener noreferrer" target="_blank">E-Verify</a> |
+                                    <a href="https://www.e-verify.gov/sites/default/files/everify/posters/IER_RighttoWorkPoster.pdf"
+                                        rel="nofollow">Right to Work</a>
+                                </p>
+                                <p><br /></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="footer-widget-area py-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-widget-content">
+                            <div class="footer-widget-item">
+                                <div class="footer-logo">
+                                    <a href="index.html">
+                                        <img src="assets/img/logo.png" alt="">
+                                    </a>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil dolores deserunt.
+                                    Est non delectus consequatur iure iste distinctio? Perferendis omnis sit maiores
+                                    soluta inventore sapiente voluptatibus, repellendus error voluptatem!</p>
+                            </div>
+                            <div class="footer-widget-item">
+                                <div class="h5 title">About us</div>
+                                <ul>
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">Why Extort</a></li>
+                                    <li><a href="#">Contact With Us</a></li>
+                                    <li><a href="#">Our Partners</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-widget-item">
+                                <div class="h5 title">For Job Seekers</div>
+                                <ul>
+                                    <li><a href="#">Browse Jobs</a></li>
+                                    <li><a href="#">Salary Tools </a></li>
+                                    <li><a href="#">Career Advice</a></li>
+                                    <li><a href="#">Company Profile</a></li>
+                                    <li><a href="#">Resume Writing Services</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-widget-item">
+                                <div class="h5 title">For Employers</div>
+                                <ul>
+                                    <li><a href="#">Products</a></li>
+                                    <li><a href="#">Solutions </a></li>
+                                    <li><a href="#">Pricing</a></li>
+                                    <li><a href="#">Resources</a></li>
+                                    <li><a href="#">Help</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-widget-item">
+                                <div class="h5 title">Helpful Resources</div>
+                                <ul>
+                                    <li><a href="#">About Monster</a></li>
+                                    <li><a href="#">Work for Monster</a></li>
+                                    <li><a href="#">Terms of Use</a></li>
+                                    <li><a href="#">Privacy Center</a></li>
+                                    <li><a href="#">Security Center</a></li>
+                                    <li><a href="#">Accessibility Center</a></li>
+                                    <li><a href="#">Do Not Sell Personal Info</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container pt-5">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-det">
+                            <div class="footer-det-item">
+                                <div class="h5 title">Find us on social media:</div>
+                                <ul class="social-footer">
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-det-item">
+                                <div class="h5 title">Get the Monster App</div>
+                                <ul class="footer-play">
+                                    <li><a href="#"><img src="assets/img/google-play.webp" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/img/mac-os.webp" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="copyright-content">
+                        <p>Copyright © 2021</p>
+                        <ul>
+                            <li><a href="#">Terms & Condition</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/plugin.js"></script>
+    <script src="assets/js/min.js"></script>
+
+
+
+</body>
+
+</html>

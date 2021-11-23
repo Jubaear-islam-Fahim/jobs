@@ -123,5 +123,26 @@
         }
     });
 
+    $('.leader-slid').owlCarousel({
+        loop: true,
+        margin: 0,
+        items: 1,
+        dots: false,
+        nav: false,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        smartSpeed: 900, 
+    });
+    $('.finest-slid').owlCarousel({
+        loop: true,
+        margin: 0,
+        items: 1,
+        dots: false,
+        nav: false,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        smartSpeed: 1000, 
+    });
+
 
 })(jQuery);
