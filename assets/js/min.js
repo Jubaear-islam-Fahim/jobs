@@ -139,7 +139,7 @@
         items: 1,
         dots: false,
         nav: false,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 5000,
         smartSpeed: 1000, 
     });
