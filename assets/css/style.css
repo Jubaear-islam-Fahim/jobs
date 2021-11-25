@@ -156,7 +156,7 @@ select {
 }
 
 /* Navbar */
-.topNav { 
+.topNav {
     border-bottom: 1px solid rgba(69, 50, 196, 0.164);
 }
 
@@ -199,7 +199,7 @@ select {
     background-size: cover; */
     height: 80vh;
     display: grid;
-    align-items: center; 
+    align-items: center;
 }
 
 .banner-content {
@@ -652,7 +652,7 @@ span.loca-dot span.price {
 
 a.details-heart {
     position: absolute;
-    right:3px;
+    right: 3px;
     top: 3px;
 
 }
@@ -801,17 +801,19 @@ a.details-heart i {
     color: var(--white-color);
 }
 
-.all-jobs-select{
+.all-jobs-select {
     float: right;
 }
+
 .all-jobs-select .form-select {
     border-radius: var(--border-2);
     min-width: 200px;
     padding: 12px 15px;
     font-size: 16px;
-    font-family: var(--proxima-extrabold); 
+    font-family: var(--proxima-extrabold);
     border: 2px solid var(--black-color);
 }
+
 .all-jobs-select .form-select option {
     min-height: 1.2em;
 }
@@ -1484,7 +1486,7 @@ px
 
 .leader-home .theme-btn {
     background-color: #fff;
-    color: var(--primary-color); 
+    color: var(--primary-color);
     font-size: var(--fs-20);
 }
 
@@ -1599,4 +1601,178 @@ px
 .how-it-work-item:nth-child(even) .number {
     left: auto;
     right: -37px;
+}
+
+/* Candidate Profile */
+
+.candidate-profile-area {
+    display: grid;
+    grid-template-columns: 25% 1fr;
+}
+
+.candidate-profile-left {
+    padding-left: 10px;
+}
+
+.candidate-profile-right {
+    margin: 0 auto;
+    max-width: 768px;
+
+}
+
+.candidate-profile-header {
+    background-color: #fdf7e3;
+    padding: 50px 30px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.candidate-profile-header h2 {
+    font-size: 40px;
+    padding-bottom: 5px;
+}
+
+.candidate-profile-header p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.candidate-profile-header h4 {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 20px 0px 5px;
+}
+
+.requirement li {
+    display: inline-block;
+    font-size: 18px;
+    padding-left: 10px;
+    font-weight: 300;
+}
+
+.requirement li:first-child {
+    border-right: 1px solid rgb(194, 194, 194);
+    padding-right: 10px;
+    padding-left: 0;
+}
+
+.candidate-profile-header img {
+    position: absolute;
+    right: 40px;
+    top: 140px;
+    bottom: 0;
+}
+
+.candidate-profile-brief {
+    padding: 80px 30px 30px;
+}
+
+.candidate-profile-skills h2,
+.candidate-profile-brief h2 {
+    font-size: 30px;
+    padding-bottom: 8px;
+}
+
+.candidate-profile-skills h2 i,
+.candidate-profile-brief h2 i {
+    color: #4634c4;
+}
+
+.candidate-profile-skills p,
+.candidate-profile-brief p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.candidate-profile-skills {
+    padding: 30px;
+}
+
+
+.candidate-profile-skills ul {}
+
+.candidate-profile-skills ul li {
+    background-color: #eee;
+    display: inline-block;
+    font-weight: 600;
+    padding: 2px 15px;
+    margin: 4px 2px;
+}
+
+.experience-content{
+    display: grid;
+    gap: 13px;
+}
+
+.experience-item{
+    border: 1px solid #eee;
+    padding: 20px 20px;
+}
+
+.experience-item .title{
+    font-weight: 600;
+    font-family: var(--proxima-extrabold);
+}
+.experience-item .h6{
+    padding: 3px 0;
+}
+
+.Visual-Diary{
+     
+}
+
+.Visual-Diary-item {
+    position: relative;
+}
+.Visual-Diary-item img{
+    width: 100% !important;
+    min-height: auto;
+}
+
+.visual-diary .slick-slider {
+    margin:0 -15px;
+}
+.visual-diary .slick-slide {
+    padding:10px; 
+    text-align:center; 
+}
+
+
+.candidate-profile-skills .visual-diary ul li{
+    padding: 0;
+    margin: 5px;
+    background: none;
+}
+.slick-dots li button:before { 
+    font-size: 35px; 
+}
+ 
+.Visual-Diary-item i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: #FF0000;
+}
+
+.candidate-all{}
+.candidate-all a {
+    font-size: 30px;
+    font-family: var(--proxima-extrabold);
+    padding: 20px;
+    color: var(--black-color);
+}
+.candidate-all a.current {
+    color: var(--primary-color);
+    background: #fff;
+}
+
+.candidate-nav{
+    padding-left: 50px;
+}
+
+.candidate-nav .navbar-brand {
+    padding-bottom: 40px;
+    display: block;
 }
