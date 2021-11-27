@@ -131,7 +131,7 @@
         items: 1,
         dots: false,
         nav: false,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 4000,
         smartSpeed: 900,
     });
