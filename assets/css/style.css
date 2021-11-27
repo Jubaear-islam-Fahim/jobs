@@ -870,7 +870,7 @@ a.details-heart i {
     z-index: 1;
 }
 
-.hr-solutions-area::after {
+/* .hr-solutions-area::after {
     content: '';
     background-color: #fff;
     width: 100%;
@@ -878,7 +878,7 @@ a.details-heart i {
     position: absolute;
     bottom: 0;
     z-index: -1;
-}
+} */
 
 .hr-solution-content {
     display: grid;
@@ -1983,4 +1983,57 @@ input[type="checkbox"]:checked+* {
 
 .candidate-skill-item {
     padding-top: 60px;
+}
+
+
+.job-seeker-content {
+    margin-top: 50px;
+}
+.job-seeker-content .col-lg-4 {
+    position: relative;
+}
+
+.single-job-seeker-card {
+    background-color: var(--white-color);
+    -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 30px 30px 50px;
+    position: relative;
+    max-width: 285px;
+    margin: 0 auto 25px;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+}
+.single-job-seeker-card .seeker-image {
+    margin-bottom: 35px;
+}
+.single-job-seeker-card h3 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 0;
+    color: var(--primary-color);
+}
+.single-job-seeker-card .step {
+    font-size: 85px;
+    color: var(--primary-color);
+    opacity: 5%;
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+}
+/* .single-job-seeker-card:hover {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+} */
+.seeker-arrow-icon {
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    max-width: 120px;
 }
