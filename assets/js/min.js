@@ -98,7 +98,7 @@
 
     $('.spotlight-slid').owlCarousel({
         loop: true,
-        margin: 0,
+        margin: 10,
         items: 1,
         dots: false,
         nav: true,
@@ -131,13 +131,14 @@
         items: 1,
         dots: false,
         nav: false,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 4000,
         smartSpeed: 900,
     });
+
     $('.finest-slid').owlCarousel({
         loop: true,
-        margin: 0,
+        margin: 10,
         items: 1,
         dots: false,
         nav: false,
