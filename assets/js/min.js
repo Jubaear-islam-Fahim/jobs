@@ -167,7 +167,7 @@
 
     $(document).ready(function () {
         let mainNavLinks = document.querySelectorAll(".candidate-all a");
-        let mainSections = document.querySelectorAll(".candidate-profile-content div");
+        let mainSections = document.querySelectorAll(".candidate-skill-item");
 
         let lastId;
         let cur = [];

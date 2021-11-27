@@ -33,6 +33,7 @@
     --white-color: #fff;
     --black-color: #222;
     --border-color: #999999;
+    --section-bg: #EBEBFF;
 
     --p-color: #656565;
 
@@ -1109,14 +1110,17 @@ px
     box-shadow: rgb(33 33 33 / 25%) 0px 6px 10px;
 }
 
+.jobs-card-right .img,
 .manufacturing-jobs-item .img {
     position: relative;
-    min-width: 55px;
-    height: 55px;
-    display: inline-block;
-    margin-bottom: 10px;
+    min-width: 90px;
+    height: 90px;
+    display: inline-block; 
+    border: 1px solid #eee;
+    border-radius: 4px;
 }
 
+.jobs-card-right img,
 .manufacturing-jobs-item img {
     position: absolute;
     top: 0;
@@ -1168,6 +1172,86 @@ px
 
 .manufacturing-jobs-item .job-company-footer .theme-btn {}
 
+.manufacturing-jobs-item{
+    display: grid;
+    gap: 30px;
+}
+.manufacturing-jobs-item .job-category{
+    display: flex;
+    align-items: center;
+    text-decoration: none; 
+    gap: 10px;
+}
+.manufacturing-jobs-item .job-category i {
+    background-color: var(--section-bg);
+    font-size: 14px;
+    width: 30px;
+    height: 30px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    color: var(--black-color);
+}
+.manufacturing-jobs-item .job-category p {
+    font-size: 14px;
+    color: var(--black-color);
+    font-family: var(--proxima-regular);
+}
+
+.manufacturing-jobs-item .title {
+    font-size: var(--fs-20);
+    font-family: var(--proxima-extrabold);
+    color: var(--black-color);
+    padding-top: 20px;
+    transition: all .3s;
+}
+.manufacturing-jobs-item:hover .title{
+    color: var(--primary-color);
+}
+.manufacturing-jobs-item .list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-top: 20px;
+}
+.manufacturing-jobs-item .list li  {
+    display: inline-block;
+    color: var(--black-color);
+    font-size: var(--fs-16); 
+    font-weight: 500;
+    gap: 10px; 
+}
+.manufacturing-jobs-item .list li i {
+    padding-right: 9px;
+}
+.manufacturing-jobs-item .jobs-card {
+    display: grid;
+    grid-template-columns: 1fr 150px;
+    align-items: center;
+    margin-top: auto;
+}
+.manufacturing-jobs-item .jobs-card-left{
+    display: grid;
+    gap: 8px;
+}
+.manufacturing-jobs-item .jobs-card-left li {
+    color: var(--black-color);
+    font-size: var(--fs-16);
+    font-family: var(--proxima-regular);
+}
+.manufacturing-jobs-item .jobs-card-left span{
+    color: var(--p-color);
+}
+.manufacturing-jobs-item .jobs-card-left strong{}
+.manufacturing-jobs-item .jobs-card-right {
+    margin-left: auto;
+}
+.manufacturing-jobs-item .jobs-card-right .img {} 
+
+
+
+
 .pagination {}
 
 
@@ -1198,6 +1282,47 @@ px
     overflow: hidden;
     overflow-y: scroll;
 }
+
+.jobs-filter-content{
+    background-color: var(--section-bg);
+    padding: 0 30px 30px;
+    border-radius: var(--border-2);
+}
+.jobs-filter-content .h4 {
+    padding-bottom: 25px;
+    padding-top: 30px;
+}
+.jobs-filter-content .jobs-filter {
+    display: grid;
+    gap: 10px;
+    align-items: center;
+}
+.jobs-filter-content .form-check-input {}
+.jobs-filter-content .form-check-input:checked {}
+.jobs-filter-content .form-check {}
+.jobs-filter-content .form-check-label {
+    display: flex;
+    gap: 20px;
+}
+.jobs-filter-content .form-check-label .title {
+    font-size: var(--fs-16);
+    font-weight: 600;
+    color: var(--black-color);
+}
+.jobs-filter-content .form-check-label .number {
+    margin-left: auto;
+    background: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    display: grid;
+    align-items: center;
+    min-width: 35px;
+    min-height: 24px;
+    justify-content: center;
+    border-radius: 4px;
+    color: var(--black-color);
+}
+
 
 
 /* Chip List */
@@ -1683,11 +1808,7 @@ px
     font-size: 16px;
     font-weight: 400;
 }
-
-.candidate-profile-skills {
-    padding: 30px;
-}
-
+ 
 
 .candidate-profile-skills ul {}
 
@@ -1775,4 +1896,8 @@ px
 .candidate-nav .navbar-brand {
     padding-bottom: 40px;
     display: block;
+}
+
+.candidate-skill-item{
+    padding-top: 60px;
 }
