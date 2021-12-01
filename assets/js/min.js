@@ -189,8 +189,15 @@
                     link.classList.remove("current");
                 }
             });
-        }); 
+        });
 
+    });
+
+    $(document).ready(function () {
+        $('.leftSidebar, .content, .rightSidebar')
+            .theiaStickySidebar({
+                additionalMarginTop: 30
+            });
     });
 
 

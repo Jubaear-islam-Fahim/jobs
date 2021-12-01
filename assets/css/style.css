@@ -2037,3 +2037,34 @@ input[type="checkbox"]:checked+* {
     transform: translateY(-50%);
     max-width: 120px;
 }
+
+.privacy-desc{}
+.privacy-desc ul li {
+    list-style: disc;
+    margin: 0 0 0 35px;
+}
+
+.privacy-list{
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: var(--border-2);
+    margin-top: 4px;
+    margin-bottom:25px;
+}
+
+.privacy-list ul {
+    display: grid;
+    gap: 10px;
+}
+.privacy-list ul li {}
+.privacy-list ul li a{
+    color: var(--black-color);
+    font-weight: 600;
+    transition: all .3s;
+}
+
+
+.privacy-list ul li .active,
+.privacy-list ul li a:hover{
+    color: var(--primary-color); 
+}
