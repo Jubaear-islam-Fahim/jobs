@@ -65,8 +65,9 @@ body {
     font-weight: 700;
 }
 
+.text-primary,
 .primary-color {
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
 }
 
 .primary-bg {
@@ -1682,9 +1683,7 @@ input[type="checkbox"]:checked+* {
     color: var(--primary-color);
 }
 
-.leader-home .theme-btn {
-    background-color: var(--primary-color);
-    color: var(--white-color);
+.leader-home .theme-btn { 
     font-size: var(--fs-20);
 }
 .leader-home .h4{
