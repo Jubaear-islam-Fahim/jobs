@@ -156,6 +156,10 @@ select {
     font-size: 18px;
 }
 
+.form-select:focus{
+    box-shadow: none;
+}
+
 /* Navbar */
 .topNav {
     border-bottom: 1px solid rgba(69, 50, 196, 0.164);
@@ -212,13 +216,13 @@ select {
     /* text-transform: uppercase; */
     letter-spacing: 1.1;
     font-weight: 600;
-    color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--white-color);
     transition: all .3s;
     font-family: var(--proxima-regular);
 }
 .menu-login-btn .login-btn:hover{
-    background-color: var(--primary-color);
-    color: var(--white-color);
+    
 }
 
 @media all and (min-width: 992px) {
@@ -500,7 +504,7 @@ select {
 
 
 .topList-item {
-    border: 1px solid #eee;
+    border: 1px solid rgb(155, 155, 155);
     padding: 30px;
 
 }
@@ -1679,11 +1683,13 @@ input[type="checkbox"]:checked+* {
 }
 
 .leader-home .theme-btn {
-    background-color: #fff;
-    color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--white-color);
     font-size: var(--fs-20);
 }
-
+.leader-home .h4{
+    font-weight: normal;
+}
 .leader-item .award {
     position: absolute;
     left: 7px;
